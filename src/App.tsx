@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <header className="navbar">
-        <h2 className="logo">TalukderMart</h2>
+        <h2 className="logo">Talukder-Mart</h2>
       </header>
 
       <section className="hero">

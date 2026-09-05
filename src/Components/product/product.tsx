@@ -1,11 +1,20 @@
+import { useState } from "react"
 import type { ProductType } from "../../type"
 import './product.css'
 
 export interface ProductProps {
     product: ProductType
+    handeCartUpdate: (product:ProductType) => void
 }
 
-export default function Product({ product }: ProductProps) {
+export default function Product({ product, handeCartUpdate }: ProductProps) {
+
+    const [addCart, setAddCart] = useState<boolean>(false)
+
+    const handleAddCart = () => {
+        setAddCart(!addCart)
+        handeCartUpdate(product)
+    }
 
     return (
         <div>
@@ -24,7 +33,7 @@ export default function Product({ product }: ProductProps) {
 
                         <div className="product-bottom">
                             <span className="product-price">${product.price}</span>
-                            <button>Add to Cart</button>
+                            <button onClick={handleAddCart}>{addCart ? "Added" : "Add to Cart"}</button>
                         </div>
                     </div>
                 </div>

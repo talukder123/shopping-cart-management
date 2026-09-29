@@ -1,32 +1,46 @@
-# React + TypeScript + Vite
+# Shopping Cart Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple Shopping Cart Management application built with React as a practice project.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is created to practice React fundamentals and understand how to manage shopping cart functionality in a React application.
 
-## React Compiler
+Users can browse products, add items to the cart, update quantities, remove products, and view the total cart price.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Display products
+- Add products to the shopping cart
+- Increase or decrease product quantity
+- Remove products from the cart
+- Calculate total price dynamically
+- Responsive user interface
+- Component-based architecture
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Technologies Used
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- React
+- JavaScript
+- HTML5
+- CSS3
+- React Hooks
+- Vite
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Purpose
+
+This repository is mainly for practicing React concepts such as:
+
+- Components
+- Props
+- State management
+- Event handling
+- Array methods
+- Conditional rendering
+- Dynamic data rendering
+- React Hooks
+- Managing cart state
+
+## Project Status
+
+This is a practice project and may be updated as I continue learning and exploring React.
